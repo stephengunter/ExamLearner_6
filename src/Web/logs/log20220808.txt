@@ -1,0 +1,54 @@
+2022-08-08 19:29:02.547 +08:00 [INF] User profile is available. Using 'C:\Users\poster_gunter79\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-08 19:29:02.663 +08:00 [INF] Testaaa
+2022-08-08 19:29:04.358 +08:00 [INF] Entity Framework Core 6.0.7 initialized 'DefaultContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-08 19:29:04.939 +08:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-08-08 19:29:05.005 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2022-08-08 19:29:05.673 +08:00 [INF] Executed DbCommand (78ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2022-08-08 19:29:05.826 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2022-08-08 19:29:05.869 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2022-08-08 19:29:06.121 +08:00 [INF] Now listening on: https://localhost:7161
+2022-08-08 19:29:06.471 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - -
+2022-08-08 19:29:06.482 +08:00 [INF] Now listening on: http://localhost:5161
+2022-08-08 19:29:06.485 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-08 19:29:06.486 +08:00 [INF] Hosting environment: Development
+2022-08-08 19:29:06.487 +08:00 [INF] Content root path: D:\source\repos\PosterExam_6\src\Web\
+2022-08-08 19:29:06.877 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - - - 200 - text/html;charset=utf-8 411.5025ms
+2022-08-08 19:29:06.884 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - -
+2022-08-08 19:29:06.884 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - -
+2022-08-08 19:29:06.920 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 35.0493ms
+2022-08-08 19:29:07.017 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 132.4019ms
+2022-08-08 19:29:07.277 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - -
+2022-08-08 19:29:07.436 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.8382ms
+2022-08-08 19:29:10.571 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7161/tests/ATests - -
+2022-08-08 19:29:10.592 +08:00 [INF] Executing endpoint 'Web.Controllers.Tests.ATestsController.Index (Web)'
+2022-08-08 19:29:10.608 +08:00 [INF] Route matched with {action = "Index", controller = "ATests", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller Web.Controllers.Tests.ATestsController (Web).
+2022-08-08 19:29:10.624 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-08-08 19:29:10.636 +08:00 [INF] Executed action Web.Controllers.Tests.ATestsController.Index (Web) in 15.8412ms
+2022-08-08 19:29:10.639 +08:00 [INF] Executed endpoint 'Web.Controllers.Tests.ATestsController.Index (Web)'
+2022-08-08 19:29:10.641 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7161/tests/ATests - - - 200 - text/plain;+charset=utf-8 70.5481ms
+2022-08-08 19:32:02.807 +08:00 [INF] Application is shutting down...

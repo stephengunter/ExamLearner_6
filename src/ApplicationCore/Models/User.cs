@@ -16,6 +16,4 @@ public class User : IdentityUser, IAggregateRoot
 
 	public virtual ICollection<Exam>? Exams { get; set; }
 
-	public virtual ICollection<Subscribe>? Subscribes { get; set; }
-
 }

@@ -20,7 +20,6 @@ public class DefaultContext : IdentityDbContext<User>
 		modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 	}
 	public DbSet<UploadFile> UploadFiles => Set<UploadFile>();
-	public DbSet<Article> Articles => Set<Article>();
 	public DbSet<Category> Categories => Set<Category>();
 	public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 	public DbSet<OAuth> OAuth => Set<OAuth>();
@@ -40,18 +39,6 @@ public class DefaultContext : IdentityDbContext<User>
 	public DbSet<RecruitQuestion> RecruitQuestions => Set<RecruitQuestion>();
 
 	public DbSet<ReviewRecord> ReviewRecords => Set<ReviewRecord>();
-
-	public DbSet<Plan> Plans => Set<Plan>();
-	public DbSet<Subscribe> Subscribes => Set<Subscribe>();
-	public DbSet<Bill> Bills => Set<Bill>();
-	public DbSet<Pay> Pays => Set<Pay>();
-
-	public DbSet<Message> Messages => Set<Message>();
-	public DbSet<Notice> Notices => Set<Notice>();
-	public DbSet<Receiver> Receivers => Set<Receiver>();
-
-	public DbSet<Manual> Manuals => Set<Manual>();
-	public DbSet<Feature> Features => Set<Feature>();
 
 	#region Data
 	public DbSet<ExamSettings> ExamSettings { get; set; }
